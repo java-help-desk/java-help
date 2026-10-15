@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Help Desk</title>
+    <style>
+        /* This CSS styles your website to look clean and modern */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0073e6;
+            border-bottom: 2px solid #f4f7f6;
+            padding-bottom: 0.5rem;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        /* Style rules for the new form fields */
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .form-group textarea {
+            font-family: 'Courier New', Courier, monospace;
+            resize: vertical;
+        }
+        .submit-btn {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .submit-btn:hover {
+            background-color: #005cb8;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Java Help Desk 🚀</h1>
+        <p>Mastering Class 8 Java Programming, Step-by-Step!</p>
+    </header>
+
+    <div class="container">
+        <h2>💡 Today's Coding Solution: Switch-Case Practice</h2>
+        <p>Here is a basic code structure to solve the 1-7 Days of the Week problem using a clean <code>switch</code> statement:</p>
+        
+        <pre>
+import java.util.Scanner;
+
+public class DayFinder {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number (1-7):");
+        int day = sc.nextInt();
+        
+        switch(day) {
+            case 1: System.out.println("Monday"); break;
+            case 2: System.out.println("Tuesday"); break;
+            default: System.out.println("Invalid day!");
+        }
+    }
+}</pre>
+    </div>
+
+    <!-- The form blocks are now properly contained inside the white container box -->
+    <div class="container">
+        <h2>🙋‍♂️ Need Help with Your Java Code?</h2>
+        <p>If your program is crashing or showing syntax errors, paste your code below so we can fix it together!</p>
+        
+        <!-- Connected to your unique Formspree Endpoint link -->
+        <form action="https://formspree.io/f/mppqkqyb" method="POST">
+            <div class="form-group">
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" name="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="useremail">Your Email:</label>
+                <input type="email" id="useremail" name="email" placeholder="Enter your email so I can reply" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="usercode">Paste your Java Question or Code here:</label>
+                <textarea id="usercode" name="message" rows="8" placeholder="e.g., My main method is giving a compile error..." required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">🚀 Send to Admin</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Created with ❤️ to help students learn Java.</p>
+    </div>
+
+</body>
+</html>
